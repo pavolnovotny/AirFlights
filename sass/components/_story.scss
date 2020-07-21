@@ -1,0 +1,52 @@
+.story {
+
+  width: 70%;
+  margin: 4rem auto;
+  box-shadow: $box-shadow;
+  background-color: rgba($color-white, 0.6);
+  border-radius: 3px;
+  padding: 4rem;
+  font-size: $default-font-size;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  
+  @include respond(tab-land) {
+    padding: 1rem;
+
+  }
+
+  @include respond(tab-port) {
+    width: 100%;       
+    flex-direction: column;
+    padding: 2rem;
+  }
+  @include respond(phone) {
+    width: 100%;       
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+ 
+
+  &__svg {
+    width: 20rem;
+    height: 20rem;
+
+    
+  }
+
+  &__img {
+    height: 100%;
+  }
+  &__text {
+    width: 70%;
+    &--para:not(:last-child) {
+      margin-bottom: 1rem;
+  }
+  @include respond(tab-port) {
+    width: 100%;       
+    flex-direction: column;
+  }
+  }
+}

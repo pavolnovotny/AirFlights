@@ -1,0 +1,257 @@
+.logo{
+  height: 10rem;
+  width: 30rem;
+}
+
+
+
+
+.top, .bottom{
+  display: flex;
+  margin-bottom: 1rem;
+  
+  & i{
+    margin: .5rem .7rem 0 0;
+  }
+ 
+}
+
+.bottom{
+  margin-top: 2rem;
+  
+  
+  
+  }
+
+.bottom p{
+  text-align: justify;
+  text-justify: inter-word;
+}  
+
+
+// form
+
+.form{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3rem;
+}
+
+.pass-info{
+  display: flex;
+  flex-direction: column;
+  &__top{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+
+    @include respond(phone) {
+      flex-direction: column;
+      
+      align-items: center;
+    }
+    
+    &--first, &--middle, &--last{
+      display: flex;
+      flex-direction: column;
+      
+    }
+
+    &--middle{
+      @include respond(phone) {
+        margin-bottom: 1.5rem;
+      }
+    }
+
+  }
+
+
+  &__bottom{
+    display: flex;
+    
+    justify-content: space-evenly;
+    
+    @include respond(phone) {
+      flex-direction: column;
+      
+      align-items: center;
+    }
+
+    &--nationality, &--gender{
+      display: flex;
+      flex-direction: column;
+      // margin: 0 1.5rem;
+    }
+  }
+
+}
+
+
+.contact{
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.5rem;
+
+  
+
+  &__middle{
+    display: flex;
+    justify-content: space-between;
+
+    @include respond(phone) {
+      flex-direction: column;
+      
+      align-items: center;
+    }
+
+    &--phone, &--email, &--adress{
+      display: flex;
+      flex-direction: column;
+    }
+
+
+  }
+  
+  
+}
+
+
+.form input , .form select {
+  
+  padding: 1rem 2rem;
+  border: none;
+   
+  background-color: $color-grey-light;
+  width: 20rem;
+  
+  color: $color-black;
+  &:focus, &:active, &:visited, &:checked, &:valid{
+    outline: 0;
+    border-color: $color-grey-light;
+    background-color:$color-grey-light ;
+  }
+
+}
+
+#category{
+  padding: 1rem 2rem;
+  
+  
+  background-color: $color-grey-light;
+  width: 20rem;
+  
+  color: $color-black;
+  &:focus, &:active{
+    outline: 0;
+    border-color: $color-grey-light;
+  }
+}
+
+
+
+
+.form label{
+  text-transform: uppercase;
+  
+}
+
+// .form select{
+//   height: 3.4rem;
+// }
+
+.form-control.success input, .form-control.success select{
+  display: flex;
+  flex-direction: column;
+  border: 2px solid $color-primary-dark;
+}
+.form-control.error input, .form-control.error select{
+  display: flex;
+  flex-direction: column;
+  border: 2px solid $color-secondary-dark;
+}
+
+.form-control small{
+  
+  color: $color-secondary-dark;
+  visibility: hidden;
+}
+.form-control.error small{  
+  visibility: visible;
+}
+
+
+
+
+.underTag{
+  text-align: center;
+  background-color: $color-grey-light-1;
+  height: 10vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.section-projects {
+  padding: 20rem 0;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-primary-light, 0.4),
+      rgba($color-primary-dark, 0.4)
+    ),
+    url(../../img/2822.jpg);
+  background-size: cover;
+  clip-path: polygon(50% 0, 50% 0, 100% 5%, 100% 95%, 50% 100%, 50% 100%, 0 95%, 0 5%);
+  margin-bottom: 4rem;
+  position: relative;
+  z-index: 1;
+
+  @include respond(tab-port) {
+    clip-path: polygon(50% 0, 50% 0, 100% 3%, 100% 97%, 50% 100%, 50% 100%, 0 97%, 0 3%);
+  }
+}
+
+
+
+.section-about_me {
+  //  margin-top: -10rem;
+  // margin-bottom: -4rem;
+   padding: 3rem 0;
+  position: relative;
+  background-color: $color-grey-light-1;
+
+  @include respond(tab-port) {
+    padding: 2rem 0;
+  }
+}
+
+.section-contact {
+  
+  margin-bottom: -3rem;
+  padding: 10rem 0;
+  position: relative;
+  background-color: $color-grey-light-1;
+  margin-top: -8rem;
+  
+  @include respond(tab-port) {
+    padding: 10rem 0;
+  }
+}
+
+

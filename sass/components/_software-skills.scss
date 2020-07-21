@@ -1,0 +1,74 @@
+.skills{
+    width: 100%;
+    margin: auto;
+    padding: 1rem;
+
+    &__item{
+        position: relative;
+        list-style: none;
+        text-transform: uppercase;
+        margin-bottom: 5rem;
+
+        
+
+        &::before{
+            content: '';
+            position: absolute;
+            top: calc(100% + 1rem);
+            left: 0;
+            width: 100%;
+            height: 2.5rem;
+            border-radius: 100rem;
+            background-image: linear-gradient(
+                to right bottom,
+                rgba($color-primary-light, 0.3),
+                rgba($color-primary-dark, 0.3)
+              )
+        }
+
+        &::after{
+            content: '';
+            position: absolute;
+            top: calc(100% + 1rem);
+            left: 0;
+            width: 100%;
+            height: 2.5rem;
+            border-radius: 100rem;
+            background-image: linear-gradient(
+                to right bottom,
+                rgba($color-primary-light, 0.9),
+                rgba($color-primary-dark, 0.9)
+              );
+
+            animation-duration: 1s ;
+            animation-timing-function: ease;
+            animation-fill-mode: forwards ;
+            
+        }
+
+        
+        
+    }
+}
+
+.html::after{
+    animation-name: html ;
+}
+.css::after{
+    animation-name: css;
+}
+.js::after{
+    animation-name: js;
+}
+.react::after{
+    animation-name: react;
+}
+.php::after{
+    animation-name: php;
+}
+.mysql::after{
+    animation-name: mysql;
+}
+
+
+

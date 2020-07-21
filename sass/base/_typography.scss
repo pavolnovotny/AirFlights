@@ -1,0 +1,53 @@
+.heading-primary, .heading-secondary  {
+  font-family: 'Dancing Script', cursive;  
+  backface-visibility: hidden;
+  display: block;
+  font-size: 4rem;
+  font-weight: 700;
+  letter-spacing: 1.5rem;  
+  margin-bottom: 6rem;
+  color: #ea2900; 
+ 
+}
+.heading-primary{
+  color:$color-white; 
+  animation: moveInRight 2s ease-out;
+}
+
+.heading-secondary{
+  color:$color-grey-dark-3; 
+}
+
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: $default-font-size;
+  line-height: 1.7;
+  color: $color-grey-dark;
+  
+  
+
+}
+
+
+
+
+.heading-tertiary {
+  font-size: 3rem;
+  font-weight: 700;  
+  margin-bottom: 6rem;
+  font-family: 'Dancing Script', cursive;  
+}
+
+.paragraph {
+  font-size: $default-font-size;
+  &:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+}
+
+.heading-green{
+  color: $color-primary-dark;
+}
+
